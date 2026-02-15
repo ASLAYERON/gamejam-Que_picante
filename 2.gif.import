@@ -12,4 +12,4 @@ dest_files=["res://.godot/imported/2.gif-93520d0e2ed2ef689b29e134f517eca3.tres"]
 
 [params]
 
-frames_per_second=30
+frames_per_second=10
