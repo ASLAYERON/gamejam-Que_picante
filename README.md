@@ -1,2 +1,2 @@
-# gamejam-Que_picante
-
+# Lavarium
+## A game by iQué picanté!
