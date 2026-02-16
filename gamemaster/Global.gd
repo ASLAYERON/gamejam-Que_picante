@@ -5,3 +5,4 @@ var levels = {	#les niveaux sont carrées, lenght = width
 		"size": 3
 	}
 }
+var active_level = "test"

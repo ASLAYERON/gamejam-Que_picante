@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://y1w7guuthx47"]
+
+[ext_resource type="Script" uid="uid://byadqfuwe8f7s" path="res://objets/portal_right/portal_right.gd" id="1_xtfdg"]
+[ext_resource type="Texture2D" uid="uid://xeky0ip385x3" path="res://icon.svg" id="2_hehno"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xtfdg"]
+a = Vector2(1000, 1009)
+b = Vector2(1000, -1001)
+
+[node name="PortalRight" type="Area2D"]
+script = ExtResource("1_xtfdg")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(1000, -1000)
+texture = ExtResource("2_hehno")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(1000, 1000)
+texture = ExtResource("2_hehno")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_xtfdg")
+debug_color = Color(0.993006, 0, 0.102948, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

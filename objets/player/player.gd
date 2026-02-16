@@ -20,7 +20,6 @@ func movement(delta):
 			velocity.y = direction_y * SPEED
 	else:
 		velocity.y = move_toward(velocity.y, 0, SPEED)
-	return direction_x,direction_y
 ## MAIN LOOP
 func _physics_process(delta: float) -> void:
 

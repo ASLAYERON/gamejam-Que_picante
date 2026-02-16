@@ -8,8 +8,9 @@
 script = ExtResource("1_dyvph")
 
 [node name="Icon" type="Sprite2D" parent="."]
-modulate = Color(0, 0.75, 0.3125, 0.517647)
-scale = Vector2(12, 12)
+modulate = Color(1, 0.14902, 1, 1)
+position = Vector2(623.5, 181.5)
+scale = Vector2(2.21094, 2.75781)
 texture = ExtResource("2_6objr")
 
 [node name="Player" parent="." instance=ExtResource("3_ybytg")]
