@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvuv3oq5kec65"]
+
+[ext_resource type="Texture2D" uid="uid://xeky0ip385x3" path="res://icon.svg" id="1_5ashv"]
+
+[sub_resource type="GDScript" id="GDScript_feu1e"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
+
+func _physics_process(delta: float) -> void:
+
+	var direction_x := Input.get_axis(\"ui_left\", \"ui_right\")
+	if direction_x:
+		if abs(velocity.x) < SPEED:
+			velocity.x += SPEED/2 * delta
+		else:
+			velocity.x = direction_x * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+	var direction_y := Input.get_axis(\"ui_up\", \"ui_down\")
+	if direction_y:
+		velocity.y = direction_y * SPEED
+	else:
+		velocity.y = move_toward(velocity.y, 0, SPEED)
+	move_and_slide()
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0yo5v"]
+radius = 54.0
+height = 146.0
+
+[node name="Player" type="CharacterBody2D"]
+script = SubResource("GDScript_feu1e")
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("1_5ashv")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_0yo5v")
