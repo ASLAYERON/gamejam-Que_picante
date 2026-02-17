@@ -1,15 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://uhm575k3ulac"]
+[gd_scene load_steps=6 format=3 uid="uid://uhm575k3ulac"]
 
 [ext_resource type="Script" uid="uid://bl8kq3gl8nkgx" path="res://niveaux/test/0_0/room.gd" id="1_k0wrc"]
 [ext_resource type="Texture2D" uid="uid://xeky0ip385x3" path="res://icon.svg" id="2_ldwlb"]
 [ext_resource type="PackedScene" uid="uid://bvuv3oq5kec65" path="res://objets/player/player.tscn" id="3_vo3jp"]
+[ext_resource type="PackedScene" uid="uid://duocpikcx2b7v" path="res://objets/portal_right/portal_right.tscn" id="4_vo3jp"]
+[ext_resource type="PackedScene" uid="uid://ciowfdrqw5j1l" path="res://objets/portal_up/portal_up.tscn" id="5_xcxa8"]
 
 [node name="0_2" type="Node2D"]
 script = ExtResource("1_k0wrc")
 
 [node name="Icon" type="Sprite2D" parent="."]
-modulate = Color(0.930454, 0.459271, 0.466872, 0.517647)
+modulate = Color(0, 0.684925, 0.883344, 0.517647)
 scale = Vector2(12, 12)
 texture = ExtResource("2_ldwlb")
 
 [node name="player" parent="." instance=ExtResource("3_vo3jp")]
+
+[node name="PortalRight" parent="." instance=ExtResource("4_vo3jp")]
+position = Vector2(10, 0)
+
+[node name="PortalUp" parent="." instance=ExtResource("5_xcxa8")]

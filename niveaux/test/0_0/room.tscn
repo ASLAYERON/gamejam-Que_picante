@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://6vd4ea04k1xo"]
+[gd_scene load_steps=6 format=3 uid="uid://6vd4ea04k1xo"]
 
 [ext_resource type="Script" uid="uid://bl8kq3gl8nkgx" path="res://niveaux/test/0_0/room.gd" id="1_omsgw"]
 [ext_resource type="Texture2D" uid="uid://xeky0ip385x3" path="res://icon.svg" id="2_16i6f"]
 [ext_resource type="PackedScene" uid="uid://bvuv3oq5kec65" path="res://objets/player/player.tscn" id="3_yeitl"]
-[ext_resource type="PackedScene" uid="uid://y1w7guuthx47" path="res://objets/portal_right/portal_right.tscn" id="4_16i6f"]
+[ext_resource type="PackedScene" uid="uid://duocpikcx2b7v" path="res://objets/portal_right/portal_right.tscn" id="4_16i6f"]
+[ext_resource type="PackedScene" uid="uid://di0udf3bfjfyf" path="res://objets/portal_down/portal_down.tscn" id="5_0mxxx"]
 
 [node name="0_0" type="Node2D"]
 script = ExtResource("1_omsgw")
@@ -16,3 +17,6 @@ texture = ExtResource("2_16i6f")
 [node name="player" parent="." instance=ExtResource("3_yeitl")]
 
 [node name="PortalRight" parent="." instance=ExtResource("4_16i6f")]
+position = Vector2(10, 0)
+
+[node name="PortalDown" parent="." instance=ExtResource("5_0mxxx")]
