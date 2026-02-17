@@ -25,5 +25,9 @@ Global="*res://gamemaster/Global.gd"
 
 [display]
 
+<<<<<<< Updated upstream
 window/stretch/mode="canvas_items"
 window/stretch/aspect="ignore"
+=======
+window/stretch/mode="viewport"
+>>>>>>> Stashed changes

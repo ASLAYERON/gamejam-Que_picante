@@ -13,3 +13,17 @@ scale = Vector2(12, 12)
 texture = ExtResource("2_5rngs")
 
 [node name="player" parent="." instance=ExtResource("3_gif1k")]
+<<<<<<< Updated upstream
+=======
+
+[node name="PortalLeft" parent="." instance=ExtResource("4_5rngs")]
+position = Vector2(-10, 0)
+
+[node name="PortalRight" parent="." instance=ExtResource("5_gif1k")]
+
+[node name="PortalUp" parent="." instance=ExtResource("6_ddvip")]
+position = Vector2(-10, 0)
+
+[node name="PortalDown" parent="." instance=ExtResource("7_pueer")]
+position = Vector2(-10, 0)
+>>>>>>> Stashed changes
