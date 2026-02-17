@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ciq4tbexrmakg"]
+
+[ext_resource type="Script" uid="uid://v2s53uqrx0o0" path="res://UI/animated_texture_rect.gd" id="1_vbf4b"]
+
+[node name="TextureRect" type="TextureRect" unique_id=1078481552]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_vbf4b")
+
+[node name="Timer" type="Timer" parent="." unique_id=1738447433]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

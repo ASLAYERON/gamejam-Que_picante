@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://chpvnv0nu5jb3"
+path="res://.godot/imported/potion_rouge.gif-5484321e81c74dd20424ee9251a2f617.tres"
+
+[deps]
+
+source_file="res://assets/items/potion_rouge.gif"
+dest_files=["res://.godot/imported/potion_rouge.gif-5484321e81c74dd20424ee9251a2f617.tres"]
+
+[params]
+
+frames_per_second=30

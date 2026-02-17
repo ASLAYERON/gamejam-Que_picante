@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c1s3hdhmnp44o"]
 
-[ext_resource type="Script" uid="uid://cc4po7xt1wf0u" path="res://minimap.gd" id="1_yfyr0"]
+[ext_resource type="Script" uid="uid://cc4po7xt1wf0u" path="res://UI/minimap/minimap.gd" id="1_yfyr0"]
 
 [node name="Control" type="Control" unique_id=185752946]
 layout_mode = 3
@@ -9,6 +9,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_yfyr0")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=196865475]
