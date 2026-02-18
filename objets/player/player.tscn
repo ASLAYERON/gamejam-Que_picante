@@ -23,3 +23,18 @@ position_smoothing_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_0yo5v")
+
+[node name="coord" type="Label" parent="."]
+offset_left = -52.0
+offset_top = -138.0
+offset_right = 60.0
+offset_bottom = -69.0
+theme_override_font_sizes/font_size = 50
+text = "TEST"
+horizontal_alignment = 1
+
+[node name="timers" type="Node2D" parent="."]
+
+[node name="smoothing_camera" type="Timer" parent="timers"]
+wait_time = 0.5
+one_shot = true

@@ -1,13 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://duocpikcx2b7v"]
+[gd_scene load_steps=3 format=3 uid="uid://ciowfdrqw5j1l"]
 
-[ext_resource type="Script" uid="uid://bdsi1alrodnm5" path="res://objets/portal_right/portal_right.gd" id="1_xtfdg"]
+[ext_resource type="Script" uid="uid://f4084ri1qn0o" path="res://objets/portal_up/portal_up.gd" id="1_gy84b"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_xtfdg"]
-a = Vector2(1000, 1009)
+a = Vector2(-1000, -990)
 b = Vector2(1000, -1001)
 
-[node name="PortalRight" type="Area2D"]
-script = ExtResource("1_xtfdg")
+[node name="PortalUp" type="Area2D"]
+script = ExtResource("1_gy84b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("SegmentShape2D_xtfdg")

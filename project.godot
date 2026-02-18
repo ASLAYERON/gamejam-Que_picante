@@ -15,6 +15,8 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Larvarium"
+run/main_scene="uid://cen54lv8g6vtl"
+config/features=PackedStringArray("4.4", "Forward Plus")
 run/main_scene="uid://c1s3hdhmnp44o"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
@@ -25,9 +27,6 @@ Global="*res://gamemaster/Global.gd"
 
 [display]
 
-<<<<<<< Updated upstream
 window/stretch/mode="canvas_items"
 window/stretch/aspect="ignore"
-=======
 window/stretch/mode="viewport"
->>>>>>> Stashed changes
