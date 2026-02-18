@@ -10,6 +10,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+expand_mode = 1
 script = ExtResource("1_vbf4b")
 
 [node name="Timer" type="Timer" parent="." unique_id=1738447433]

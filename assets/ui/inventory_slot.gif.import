@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://dyyh42yekuexw"
+path="res://.godot/imported/inventory_slot.gif-dea9bccbb7137bb24852b91d37047321.tres"
+
+[deps]
+
+source_file="res://assets/ui/inventory_slot.gif"
+dest_files=["res://.godot/imported/inventory_slot.gif-dea9bccbb7137bb24852b91d37047321.tres"]
+
+[params]
+
+frames_per_second=30

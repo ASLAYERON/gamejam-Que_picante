@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b0e6elteb8m66"]
+
+[ext_resource type="PackedScene" uid="uid://ciq4tbexrmakg" path="res://UI/animated_texture_rect.tscn" id="1_5qjv3"]
+[ext_resource type="Script" uid="uid://cscq3u3skjlss" path="res://mouse_item.gd" id="1_mt717"]
+
+[node name="Node2D" type="Control" unique_id=1384466643]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_mt717")
+
+[node name="TextureRect" parent="." unique_id=1078481552 instance=ExtResource("1_5qjv3")]
+layout_mode = 1
+mouse_filter = 2

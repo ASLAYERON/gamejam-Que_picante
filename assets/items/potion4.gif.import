@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://0fj2bptkq86r"
+path="res://.godot/imported/potion4.gif-9dec7af42672852ee08b911d6616da2f.tres"
+
+[deps]
+
+source_file="res://assets/items/potion4.gif"
+dest_files=["res://.godot/imported/potion4.gif-9dec7af42672852ee08b911d6616da2f.tres"]
+
+[params]
+
+frames_per_second=30

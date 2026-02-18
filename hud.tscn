@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dus43gq2q1dgn"]
+
+[ext_resource type="Script" uid="uid://850fh78msyh4" path="res://hud.gd" id="1_8sq4i"]
+[ext_resource type="PackedScene" uid="uid://b5svdibhdxae2" path="res://UI/inventory/inventory.tscn" id="1_64ctp"]
+[ext_resource type="PackedScene" uid="uid://c1s3hdhmnp44o" path="res://UI/minimap/minimap.tscn" id="2_8sq4i"]
+[ext_resource type="PackedScene" uid="uid://b0e6elteb8m66" path="res://mouse_item.tscn" id="4_640wx"]
+
+[node name="Control" type="Control" unique_id=703844763]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_8sq4i")
+
+[node name="Inventory" parent="." unique_id=663369773 instance=ExtResource("1_64ctp")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 1142.0
+offset_bottom = 638.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Minimap" parent="." unique_id=196865475 instance=ExtResource("2_8sq4i")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 1142.0
+offset_bottom = 638.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Mouse_item" parent="." unique_id=1384466643 instance=ExtResource("4_640wx")]
+layout_mode = 0
