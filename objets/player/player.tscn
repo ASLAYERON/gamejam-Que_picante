@@ -1,17 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvuv3oq5kec65"]
+[gd_scene load_steps=5 format=3 uid="uid://bvuv3oq5kec65"]
 
 [ext_resource type="Script" uid="uid://deppidnp1mhta" path="res://objets/player/player.gd" id="1_5ashv"]
-[ext_resource type="Texture2D" uid="uid://xeky0ip385x3" path="res://icon.svg" id="2_feu1e"]
+[ext_resource type="Texture2D" uid="uid://d2uy64h7ruf0p" path="res://assets/sprites/player_sprite_back.gif" id="2_0yo5v"]
+[ext_resource type="Texture2D" uid="uid://c2ciu06sro1av" path="res://assets/sprites/player_sprite_face.gif" id="3_r4jla"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0yo5v"]
-radius = 54.0
-height = 146.0
+radius = 29.5
+height = 85.0
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_5ashv")
-
-[node name="Icon" type="Sprite2D" parent="."]
-texture = ExtResource("2_feu1e")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = -1000
@@ -22,6 +20,7 @@ limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_0yo5v")
 
 [node name="coord" type="Label" parent="."]
@@ -38,3 +37,14 @@ horizontal_alignment = 1
 [node name="smoothing_camera" type="Timer" parent="timers"]
 wait_time = 0.5
 one_shot = true
+
+[node name="sprites" type="Node2D" parent="."]
+
+[node name="PlayerSpriteFace" type="Sprite2D" parent="sprites"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_r4jla")
+
+[node name="PlayerSpriteBack" type="Sprite2D" parent="sprites"]
+visible = false
+scale = Vector2(2, 2)
+texture = ExtResource("2_0yo5v")
