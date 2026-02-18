@@ -1,0 +1,14 @@
+[remap]
+
+importer="import_gif_to_animated_texture"
+type="AnimatedTexture"
+uid="uid://d2uy64h7ruf0p"
+path="res://.godot/imported/player_sprite_back.gif-81b69f0062b4bb7ab55d9ad03341bfea.tres"
+
+[deps]
+
+source_file="res://assets/sprites/player_sprite_back.gif"
+dest_files=["res://.godot/imported/player_sprite_back.gif-81b69f0062b4bb7ab55d9ad03341bfea.tres"]
+
+[params]
+

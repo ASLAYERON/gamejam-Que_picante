@@ -1,0 +1,14 @@
+[remap]
+
+importer="import_gif_to_animated_texture"
+type="AnimatedTexture"
+uid="uid://c2ciu06sro1av"
+path="res://.godot/imported/player_sprite_face.gif-74506ffab4deaa1d81e010080e4180cc.tres"
+
+[deps]
+
+source_file="res://assets/sprites/player_sprite_face.gif"
+dest_files=["res://.godot/imported/player_sprite_face.gif-74506ffab4deaa1d81e010080e4180cc.tres"]
+
+[params]
+
