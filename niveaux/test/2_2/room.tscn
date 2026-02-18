@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://y1w7guuthx47" path="res://objets/portal_left/portal_left.tscn" id="4_3ybw5"]
 [ext_resource type="PackedScene" uid="uid://ciowfdrqw5j1l" path="res://objets/portal_up/portal_up.tscn" id="5_i5m5o"]
 
-[node name="2_0" type="Node2D"]
+[node name="2_2" type="Node2D"]
 script = ExtResource("1_elqec")
 
 [node name="Icon" type="Sprite2D" parent="."]
