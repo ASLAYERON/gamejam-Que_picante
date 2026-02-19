@@ -40,13 +40,11 @@ func movement(delta):
 	if direction_x or direction_y: is_walking = true
 	else: is_walking = false
 	if !was_walking && is_walking:
-		print("sart_walking")
 		reset_tween()
 		tween.set_loops()
 		tween.tween_property($sprites,"scale",Vector2(1,0.8),0.3)
 		tween.tween_property($sprites,"scale",Vector2(1,1),0.3)
 	if was_walking && !is_walking:
-		print("stopped walking")
 		reset_tween()
 		$sprites.scale = Vector2(1,1)
 	was_walking = is_walking
@@ -64,9 +62,10 @@ func _on_smoothing_camera_timeout() -> void:
 func _ready() -> void:
 	$Camera2D.position_smoothing_enabled = false
 	position = Global.tp_offset
-	var coord_string = String(get_parent().name)
-	$coord.text = coord_string
 	$timers/smoothing_camera.start()
+	var room_coord = get_parent().coord
+	$coord.text = str(room_coord[0]) + " " + str(room_coord[1])
+	
 
 func _physics_process(delta: float) -> void:
 	movement(delta)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://b25rv2wjjlmui"]
 
-[ext_resource type="Script" uid="uid://bl8kq3gl8nkgx" path="res://niveaux/test/0_0/room.gd" id="1_acmky"]
+[ext_resource type="Script" uid="uid://cgeiu7whajeq8" path="res://niveaux/test/2_1/room.gd" id="1_d53kx"]
 [ext_resource type="Texture2D" uid="uid://xeky0ip385x3" path="res://icon.svg" id="2_oc4vi"]
 [ext_resource type="PackedScene" uid="uid://bvuv3oq5kec65" path="res://objets/player/player.tscn" id="3_71x3p"]
 [ext_resource type="PackedScene" uid="uid://y1w7guuthx47" path="res://objets/portal_left/portal_left.tscn" id="4_d53kx"]
@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://di0udf3bfjfyf" path="res://objets/portal_down/portal_down.tscn" id="7_57fqa"]
 
 [node name="2_1" type="Node2D"]
-script = ExtResource("1_acmky")
+script = ExtResource("1_d53kx")
 
 [node name="Icon" type="Sprite2D" parent="."]
 modulate = Color(0.64096, 0.656277, 0, 0.517647)
