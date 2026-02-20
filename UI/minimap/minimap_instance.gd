@@ -1,5 +1,6 @@
 extends Control
 
+
 var master : Node
 
 

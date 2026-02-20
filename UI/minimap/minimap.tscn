@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cc4po7xt1wf0u" path="res://UI/minimap/minimap.gd" id="1_yfyr0"]
 
 [node name="VBoxContainer" type="VBoxContainer" unique_id=196865475]
+custom_minimum_size = Vector2(1, 0)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

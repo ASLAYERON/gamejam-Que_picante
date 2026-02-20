@@ -1,5 +1,6 @@
 extends Control
 
+
 var master : Node 
 
 var WANTED_SIZE = Global.right_ui_size
