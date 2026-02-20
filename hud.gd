@@ -64,6 +64,7 @@ func slot_hovered(slot):
 			hovered_slots.append(minimap.rooms[vector]["slot"])
 		
 
+
 func slot_not_hovered(_slot):
 	for s in hovered_slots:
 		s.stop_hover()
