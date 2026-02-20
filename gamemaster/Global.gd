@@ -1,5 +1,6 @@
 extends Node
 
+
 var levels_data = {	#les niveaux sont carrées, lenght = width
 	"test": {
 		"size": 3
